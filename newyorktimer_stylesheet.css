@@ -45,8 +45,10 @@ a:hover {
 }
 
 header{
-    position: relative;
+    position: sticky;
+    top: 0;
     padding: 0 2rem;
+    background: radial-gradient(circle, rgba(131,58,180,1) 20%, rgba(253,29,155,1) 71%, rgba(252,176,69,1) 100%);
 }
 
 .navbar-wrapper {
@@ -54,7 +56,6 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional */
 }
@@ -86,7 +87,7 @@ header{
 }
 
 .actionButton {
-    background-color: #2a475e;
+    background-color: #00229E;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border: none;
@@ -101,7 +102,7 @@ header{
 
 .actionButton:hover {
     scale: 1.05;
-    color: #ffffff;
+    color: #00e5ff;
 }
 
 .actionButton:active{
@@ -125,6 +126,7 @@ header{
 }
 
 .dropdownMenu.open{
+    margin-top: 10px;
     height: 265px;
 }
 
@@ -142,7 +144,7 @@ header{
 }
 
 /* hero */
-section#hero{
+section#home{
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
