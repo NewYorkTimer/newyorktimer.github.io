@@ -1,9 +1,8 @@
-/* fonts */
+
 @font-face {
     font-family: Balatro;
     src: url('Fonts/balatro.ttf');
 }
-
 
 *{
     margin: 0;
@@ -16,13 +15,9 @@ html{
     scroll-behavior: smooth;
 }
 
-#suitPicture{
-
-}
-
 body{
     height: 100vh;
-    background: linear-gradient(64.5deg, rgb(126, 17, 156) 10.7%, rgb(30, 0, 99) 90.7%);
+    background: linear-gradient(64.5deg, rgba(11,0,78,1) 10.7%, rgba(83,0,133,1) 90.7%);
     background-size: 100vw 5500px;
     /* background-color: #280732; */
 }
@@ -55,7 +50,8 @@ header{
     position: sticky;
     top: 0;
     padding: 0 2rem;
-    background: radial-gradient(circle, rgba(131,58,180,1) 20%, rgba(253,29,155,1) 71%, rgba(252,176,69,1) 100%);
+    background: rgb(255,255,255,0.2);
+    backdrop-filter: blur(7px);
 }
 
 .navbar-wrapper {
@@ -94,7 +90,7 @@ header{
 }
 
 .actionButton {
-    background-color: #00229E;
+    background-color: #133569;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border: none;
@@ -149,17 +145,46 @@ header{
     display: flex;
     justify-content: center;
 }
+/****** SECTIONS ******/
 
-/* hero */
+/* HOME SECTION */
 section#home{
     height: calc(100vh - 60px);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     color: #ffffff;
 }
+
+#intro {
+    width: 50vw;
+    text-align: center;
+    overflow: hidden;
+    display: block;
+}
+
+#introHeader {
+    margin-top: 50%;
+    margin-right: 10%;
+    font-size: 4rem;
+}
+
+#introText{
+    font-size: 2rem;
+    margin-left: 10%;
+}
+
+#suitPicture {
+    width: 40vw;
+    display: block;
+}
+
+#suitPicture img {
+    margin-top: 10%;
+}
+
+/* ABOUT SECTION */
 
 section#about{
     height: calc(100vh - 60px);
@@ -171,6 +196,24 @@ section#about{
     color: #ffffff;
 }
 
+#aboutContainer{
+    text-align: left;
+    height: 80%;
+    width: 45vw;
+}
+
+#aboutHeader {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.aboutText{
+    font-size: 1.5rem;
+    margin-top:5%;
+}
+
+/* EXPERIENCE SECTION */
+
 section#experience{
     height: calc(100vh - 60px);
     display: flex;
@@ -181,7 +224,26 @@ section#experience{
     color: #ffffff;
 }
 
-section#projects{
+#experienceContainer {
+    height: 80%;
+    width: 45vw;
+}
+
+#experienceHeader {
+    text-align: center;
+    margin-top: 45%;
+    font-size: 3rem;
+}
+
+#experienceText {
+    font-size: 1.5rem;
+    margin-top: 10%;
+}
+
+
+/* PROJECTS SECTION */
+
+section#projects {
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -190,6 +252,24 @@ section#projects{
     text-align: center;
     color: #ffffff;
 }
+
+#projectsContainer {
+    height: 80%;
+    width: 45vw;
+}
+
+#projectsHeader {
+    text-align: center;
+    margin-top: 45%;
+    font-size: 3rem;
+}
+
+#projectsText {
+    font-size: 1.5rem;
+    margin-top: 10%;
+}
+
+/* CONTACT SECTION */
 
 section#contact{
     height: calc(100vh - 60px);
@@ -201,7 +281,48 @@ section#contact{
     color: #ffffff;
 }
 
-/* responsive */
+#contactContainer {
+    height: 80%;
+    width: 90vw;
+    display: flex;
+}
+
+#contactHeader {
+    text-align: center;
+    font-size: 3rem;
+    height: 10%;
+    width: 30vw;
+}
+
+.contact {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: 6%;
+}
+
+#gitHub{
+    margin-top: 5%;
+    width: 25%;
+}
+
+#steam {
+    margin-top: 5%;
+    width: 25%;
+}
+
+#discord {
+    margin-top: 5%;
+    width: 25%;
+}
+
+#contactText {
+    font-size: 1.5rem;
+    margin-top: 10%;
+}
+
+/****** RESPONSIVENESS ******/
+
 @media(max-width:992px){
     .navbar .nav-links,
     .navbar .actionButton{
