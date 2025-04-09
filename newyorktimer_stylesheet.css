@@ -1,3 +1,10 @@
+/* fonts */
+@font-face {
+    font-family: Balatro;
+    src: url('Fonts/balatro.ttf');
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -70,8 +77,8 @@ header{
 }
 
 .navbar .logo a {
+    font-family: Balatro, sans-serif;
     font-size: 1.5rem;
-    font-weight: bold;
 }
 
 .navbar .nav-links {
@@ -216,5 +223,6 @@ section#contact{
         width: unset;
     }
 }
+
 
 /* comment */
