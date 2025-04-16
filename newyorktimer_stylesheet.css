@@ -29,6 +29,12 @@ body{
     margin-left: 10%;
 }
 
+.shortLine {
+    width: 30%;
+    height: 1px;
+    background: linear-gradient(64.5deg, rgb(255, 225, 0) 14.7%, rgb(255, 85, 0) 88.7%);
+}
+
 main{
 }
 
@@ -90,7 +96,7 @@ header{
 }
 
 .actionButton {
-    background-color: #133569;
+    background-color: red;
     color: #ffffff;
     padding: 0.5rem 1rem;
     border: none;
@@ -105,7 +111,7 @@ header{
 
 .actionButton:hover {
     scale: 1.05;
-    color: #00e5ff;
+    color: #fba3a3;
 }
 
 .actionButton:active{
@@ -202,6 +208,13 @@ section#about{
     width: 45vw;
 }
 
+.scrollContainer {
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(255, 255, 255, 0.01);
+}
+
 #aboutHeader {
     text-align: center;
     font-size: 3rem;
@@ -212,9 +225,9 @@ section#about{
     margin-top:5%;
 }
 
-/* EXPERIENCE SECTION */
+/* SKILLS SECTION */
 
-section#experience{
+section#skills{
     height: calc(100vh - 60px);
     display: flex;
     flex-direction: column;
@@ -224,18 +237,18 @@ section#experience{
     color: #ffffff;
 }
 
-#experienceContainer {
+#skillsContainer {
     height: 80%;
     width: 45vw;
 }
 
-#experienceHeader {
+#skillsHeader {
     text-align: center;
     margin-top: 45%;
     font-size: 3rem;
 }
 
-#experienceText {
+#skillsText {
     font-size: 1.5rem;
     margin-top: 10%;
 }
@@ -250,23 +263,58 @@ section#projects {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
 }
 
 #projectsContainer {
     height: 80%;
-    width: 45vw;
+    width: 90vw;
 }
 
 #projectsHeader {
     text-align: center;
-    margin-top: 45%;
     font-size: 3rem;
+    height: 10%;
+    width: 30vw;
 }
 
 #projectsText {
     font-size: 1.5rem;
     margin-top: 10%;
+}
+
+.project {
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 90vw;
+    height: 35%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.projectImage {
+    border-radius: 5px;
+    margin: 0.6%;
+    width: 95%;
+    height: 70%;
+}
+
+.project img {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.project a{
+    font-size: 2rem;
+}
+
+.projectTitle {
+    display: flex;
+    width: 100%;
 }
 
 /* CONTACT SECTION */
@@ -342,6 +390,12 @@ section#contact{
     .dropdownMenu {
         left: 2rem;
         width: unset;
+    }
+}
+
+/* @media (max-width: 1446px){
+    .aboutText{
+        overflow-y: scroll;
     }
 }
 
