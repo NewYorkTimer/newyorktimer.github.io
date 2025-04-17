@@ -257,12 +257,14 @@ section#skills{
 /* PROJECTS SECTION */
 
 section#projects {
-    height: calc(100vh - 60px);
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: #ffffff;
+    margin-bottom: 2%;
 }
 
 #projectsContainer {
@@ -271,6 +273,8 @@ section#projects {
 }
 
 #projectsHeader {
+    margin-top: 2%;
+    margin-bottom: 2%;
     text-align: center;
     font-size: 3rem;
     height: 10%;
@@ -283,41 +287,40 @@ section#projects {
 }
 
 .project {
-    margin-top: 1%;
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 90vw;
-    height: 35%;
+    height: fit-content;
     border-radius: 10px;
-    background: #ffffff;
-}
-
-.projectImage {
-    border-radius: 5px;
-    margin: 0.6%;
-    width: 95%;
-    height: 70%;
+    background: rgb(255,255,255,0.2);
 }
 
 .project img {
     border-radius: 5px;
-    width: 95%;
-    height: 70%;
-}
-
-.project a{
-    font-size: 2rem;
-    margin-top: 3%;
     width: 100%;
     height: 100%;
 }
 
+.project a{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    width: 95%;
+    height: 100%;
+    text-align: left;
+}
+
 .projectTitle {
-    display: flex;
-    width: 100%;
+    margin-top: 0.5%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.projectDescription {
+    font-size: 1.2rem;
 }
 
 /* CONTACT SECTION */
